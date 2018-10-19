@@ -1,7 +1,7 @@
 ---
 title: springboot配置cors跨域
 date: 2018-02-02 13:32:00
-tags: [cors,springboot]
+tags: [cors,springboot,spring]
 ---
 
 这里是对rails365的跨域资源共享 CORS教程做的一个springboot版本[原文链接](http://corsbook.rails365.net/467077)              
