@@ -4,7 +4,8 @@ date: 2018-05-13 13:32:00
 tags: [springboot,spring]
 ---
 
-公司目前的项目都是用的springboot进行开发，项目里面有些功能需要用到可执行程序，使用CommandLine执行命令调用，在执行命令时需要程序的绝对路径，而springboot打包插件是将所有的jar包和资源文件都打包成一个可执行的jar包，这样导致无法获取资源文件下面的可执行程序的绝对路径，导致命令无法执行。于是同事写了一个打包插件，把springboot打包成一个zip文件，并生成相关的启动命令，直接调用脚本即可启动程序，类似于dubbo的打包方式。     
+公司目前的项目都是用的springboot进行开发，项目里面有些功能需要用到可执行程序，使用CommandLine执行命令调用，在执行命令时需要程序的绝对路径，而springboot打包插件是将所有的jar包和资源文件都打包成一个可执行的jar包，这样导致无法获取资源文件下面的可执行程序的绝对路径，导致命令无法执行。于是同事写了一个打包插件，把springboot打包成一个zip文件，并生成相关的启动命令，直接调用脚本即可启动程序，类似于dubbo的打包方式。    
+<!-- more -->    
 具体启动命令如下：  
 ```java   
 java -Dloader.main=xxx.xxx.Application -Dloader.path=lib,config,resource,xxx.jar -Dspring.profiles.active=dev org.springframework.boot.loader.PropertiesLauncher

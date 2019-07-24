@@ -5,7 +5,8 @@ tags: [spi]
 ---
 
 SPI是Service Provider Interfaces的简称。根据Java的SPI规范，我们可以定义一个服务接口，具体的实现由对应的实现者去提供，即Service Provider（服务提供者）。然后在使用的时候只要根据SPI的规范去获取对应的服务提供者的服务实现即可。   
-SPI我的简单理解为服务提供方提供接口，调用方通过接口实现自己的扩展，然后修改服务提供方的jar包或者其他交付方式的META-INF/services中对应的接口配置指定实现类。   
+<!-- more -->     
+SPI我的简单理解为服务提供方提供接口，调用方通过接口实现自己的扩展，然后修改服务提供方的jar包或者其他交付方式的META-INF/services中对应的接口配置指定实现类。  
 SPI机制的约定：   
 > * 在META-INF/services/目录中创建以接口全限定名命名的文件该文件内容为Api具体实现类的全限定名
 > * 使用ServiceLoader类动态加载META-INF中的实现类    

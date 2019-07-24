@@ -4,7 +4,8 @@ date: 2018-05-10 13:41:00
 tags: [shiro]
 ---
 
-问题产生背景：之前项目用过shiro做权限控制，新项目决定延用shiro做权限控制，但是新项目采用前后分离，session超时后，需要返回json结构给前端去处理，shiro默认处理方案是session超时后重定向到登陆链接，修改如下   
+问题产生背景：之前项目用过shiro做权限控制，新项目决定延用shiro做权限控制，但是新项目采用前后分离，session超时后，需要返回json结构给前端去处理，shiro默认处理方案是session超时后重定向到登陆链接，修改如下       
+<!-- more -->  
 
 ### 1.创建SessionExpiredFilter  
 ```java
